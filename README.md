@@ -27,17 +27,6 @@ The tool produces annotation files that load directly into standard segmentation
 
 ---
 
-## Relevance to SAM 3.1
-
-Segmentation models like SAM 3.1 output masks in formats that must be converted into training-ready structures (COCO polygons or RLE). This tool covers both ends of that pipeline:
-
-1. **Input side** — a usable interface for producing clean, class-labeled segmentation data.
-2. **Output side** — correct COCO schema generation, including bbox, area, and RLE handling.
-
-This end-to-end understanding is what makes the tool useful as a foundation for segmentation-based projects.
-
----
-
 ## Status
 
 Working prototype. Produces COCO JSON that loads directly into standard segmentation training workflows.
